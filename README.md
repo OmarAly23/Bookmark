@@ -1,4 +1,5 @@
-# *Bookmark: CS335 Project - Contributed by Husain Almotairi && Omar Aly*
+# *Bookmark: CS335 Project*
+- *Contributed by Husain Almotairi && Omar Aly*
 
 
 ## *A description of the project:*
