@@ -1,0 +1,105 @@
+.bookmark-header  {
+    border: 5px solid black;
+    width: 100%;
+    height: 120px;
+    font-family: 'Abril Fatface', sans-serif;
+    background-color: cadetblue;
+}
+
+body {
+    font-family: menlo, sans-serif;
+}
+
+header a {
+    font-size: 20px;
+    color: black;
+}
+
+footer {
+    background-image: url('../images/footer-background.jpeg');
+    border: 5px solid black;
+    margin: 10px 10px 0px 0px;
+    padding: 20px;    
+    width: 100%;
+
+}
+
+#about h6, p, li{
+    color: white;
+}
+
+#about h6 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#about ul ul li a {
+    color: orange;
+}
+
+#about ul ul li a:hover {
+    border: 5px solid lightblue;
+    background-color: darkblue;
+
+}
+
+#about p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-item input[type=text] {
+    float: right;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-right: 16px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', sans-serif;
+    height: 30px;
+  }
+
+img {
+    width: 150px;
+    height: 200px;
+    object-position: center;
+}
+
+.books .containers {
+    border: 5px solid black;
+    margin: 50px 50px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+}
+
+.books .image2{
+    margin: 0 auto;
+    width: 450px;
+    padding: 10px;
+    
+}
+
+.middle-section {
+    border: 2px solid black;
+    width: 100%;
+
+}
+
+
+main p {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 20px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 70px;
+    padding: 10px;
+    color: black;
+
+}
