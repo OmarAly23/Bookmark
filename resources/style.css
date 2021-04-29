@@ -13,6 +13,7 @@
 .bookmark-header h1 a{
     text-decoration: none;
     font-size: 40px;
+    color: white;
 }
 
 .bookmark-header ul li, h1 {
