@@ -1,4 +1,4 @@
-.bookmark-header  {
+.bookmark-header {
     border: 5px solid black;
     width: 100%;
     height: 70px;
@@ -9,6 +9,10 @@
     position: fixed;
     top: 0px;
     /* overflow: hidden; */
+}
+.bookmark-header h1 a{
+    text-decoration: none;
+    font-size: 40px;
 }
 
 .bookmark-header ul li, h1 {
