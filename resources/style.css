@@ -78,9 +78,9 @@ footer {
   }
 
 img {
-    width: 250px;
-    height: 300px;
-    padding: 10px;
+    width: 200px;
+    height: 250px;
+    padding: 0px;
     margin: 20px;
 }
 
@@ -98,7 +98,14 @@ img {
 .image-boxes .container .image2, .image3, .image0, .image1 {
     display: inline-block;
     border: 2px solid black;
-    padding: 50px;
+    padding: 0px;
+    width: 500px;
+    margin: 40px;
+}
+.image-boxes .container .image5 {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 0px;
     width: 500px;
     margin: 40px;
 }
@@ -135,5 +142,5 @@ figcaption {
 
 
 body {
-    background-color: lightcyan;
+    background-color: whitesmoke;
 }
