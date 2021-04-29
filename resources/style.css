@@ -6,7 +6,9 @@
     background-image: url('../images/black-strips.png');
     /* background-color: #358597; */
     color: white;
-    position: sticky;
+    position: fixed;
+    top: 0px;
+    /* overflow: hidden; */
 }
 
 .bookmark-header ul li, h1 {
@@ -129,4 +131,9 @@ figcaption {
 
 .discover h5, span {
     color: white;
+}
+
+
+body {
+    background-color: lightcyan;
 }
