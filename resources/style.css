@@ -16,6 +16,23 @@
     color: white;
 }
 
+html {
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+
 .bookmark-header ul li, h1 {
     display: inline-block;
 }
@@ -57,6 +74,7 @@ footer {
 #about ul ul li a {
     color: orange;
 }
+
 
 #about ul ul li a:hover {
     border: 5px solid lightblue;
@@ -104,14 +122,14 @@ img {
     display: inline-block;
     border: 2px solid black;
     padding: 0px;
-    width: 500px;
+    width: 400px;
     margin: 40px;
 }
 .image-boxes .container .image5 {
     display: inline-block;
     border: 2px solid black;
     padding: 0px;
-    width: 500px;
+    width: 400px;
     margin: 40px;
 }
 
