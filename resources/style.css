@@ -1,3 +1,8 @@
+html {
+    font-size: 16px;
+}
+
+
 .bookmark-header {
     border: 5px solid black;
     width: 100%;
@@ -10,27 +15,13 @@
     top: 0px;
     /* overflow: hidden; */
 }
+
 .bookmark-header h1 a{
     text-decoration: none;
     font-size: 40px;
     color: white;
 }
 
-html {
-    font-size: 18px;
-  }
-  
-  @media only screen and (max-width: 1000px) {
-    html {
-      font-size: 16px;
-    }
-  }
-  
-  @media only screen and (max-width: 680px) {
-    html {
-      font-size: 14px;
-    }
-  }
 
 
 .bookmark-header ul li, h1 {
@@ -40,6 +31,20 @@ html {
 .bookmark-header h1 {
     float: left;
     margin: 0px;
+}
+
+@media only screen and (max-width: 720px) {
+    .bookmark-header ul li {
+        font-size: 0.5rem;
+        overflow: hidden;
+    }
+    .bookmark-header .search {
+        font-size: 0.5rem;
+        display: none;
+    }
+    .bookmark-header h1 a {
+        font-size: 1.5rem;
+    }
 }
  
 body {
@@ -51,7 +56,9 @@ header a {
     color: white;
 }
 
-footer {
+
+
+.footerClass {
     background-image: url('../images/footer-background.jpeg');
     border: 5px solid black;
     margin: 10px 10px 0px 0px;
@@ -87,6 +94,15 @@ footer {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 720px) {
+    .footerClass {
+        width: 100%;
+    }
+    #about p, #about ul ul li, #about h6, #about ul ul li a{
+        
+        font-size: 0.8rem;
+    }
+}
 .nav-item input[type=text] {
     float: right;
     padding: 10px;
@@ -133,6 +149,36 @@ img {
     margin: 40px;
 }
 
+@media only screen and (max-width: 1400px) {
+    .image-boxes .container .image2, .image-boxes .container .image3, .image-boxes .container .image0, .image-boxes .container .image1,.image-boxes .container .image5 {
+        display: inline-block;
+        overflow: scroll;
+        width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .image-boxes .container .image2, .image-boxes .container .image3, .image-boxes .container .image0, .image-boxes .container .image1,.image-boxes .container .image5 {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        height: 300px;
+        overflow: scroll;
+        margin-bottom: 20px;
+
+    }
+    .image-boxes .container ul li {
+        display: inline-block;
+    }
+    img {
+        width: 100px;
+        height: 150px;
+    }
+    figcaption {
+        font-size: 0.5rem;
+    }
+}
+
 figcaption {
     color: black;
     font-size: 13px;
@@ -163,6 +209,14 @@ figcaption {
     color: white;
 }
 
+@media only screen and (max-width: 720px) {
+    .discover h5, span {
+        font-size: 0.75rem;
+        height: auto;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
 
 body {
     background-color: whitesmoke;
