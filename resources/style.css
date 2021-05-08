@@ -195,7 +195,7 @@ figcaption {
     height: 200px;
     padding: 50px;
     color: white;
-    background-image: url('/images/black-strips.png');
+    background-image: url('../images/black-strips.png');
     /* background-color: #358597; */
 
 }
