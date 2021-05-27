@@ -1,8 +1,18 @@
-html {
+html{
     font-size: 16px;
 }
+h3 {
+    font-family: 'Abril Fatface', sans-serif;
+    margin-left: 25rem;
+    text-decoration: underline;
+}
 
+.bkimg img {
+    display:block;
+    width:100%; height:100%;
+    object-fit: cover;
 
+}
 .bookmark-header {
     border: 5px solid black;
     width: 100%;
@@ -22,7 +32,14 @@ html {
     color: white;
 }
 
+.bookmark-header h1 {
+    margin-top: 25px;
+    margin-left: 10px;
+}
 
+.bookmark-header ul li {
+    margin-top: 16px;
+}
 
 .bookmark-header ul li, h1 {
     display: inline-block;
@@ -57,52 +74,6 @@ header a {
 }
 
 
-
-.footerClass {
-    background-image: url('../images/footer-background.jpeg');
-    border: 5px solid black;
-    margin: 10px 10px 0px 0px;
-    padding: 20px;    
-    width: 100%;
-
-}
-
-#about h6, p, li{
-    color: white;
-}
-
-#about h6 {
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold; 
-    font-size: 20px;
-}
-
-#about ul ul li a {
-    color: orange;
-}
-
-
-#about ul ul li a:hover {
-    border: 5px solid lightblue;
-    background-color: darkblue;
-
-}
-
-#about p {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-@media only screen and (max-width: 720px) {
-    .footerClass {
-        width: 100%;
-    }
-    #about p, #about ul ul li, #about h6, #about ul ul li a{
-        
-        font-size: 0.8rem;
-    }
-}
 .nav-item input[type=text] {
     float: right;
     padding: 10px;
@@ -116,7 +87,9 @@ header a {
     color: black;
   }
 
-img {
+
+
+.container img {
     width: 200px;
     height: 250px;
     padding: 0px;
@@ -182,10 +155,10 @@ img {
 figcaption {
     color: black;
     font-size: 13px;
-    padding: 5px;
+    padding: 5px; 
 }
 
-.discover h5 {
+.discover h5{
     font-family: 'Abril Fatface', sans-serif;
     font-size: 20px;
     border: 2px solid black;
@@ -195,19 +168,16 @@ figcaption {
     height: 200px;
     padding: 50px;
     color: white;
-    background-image: url('/images/black-strips.png');
+    background-image: url('../images/black-strips.png');
     /* background-color: #358597; */
 
 }
 
-.discover span {
+.discover span{
     font-size: 16px;
 }
 
 
-.discover h5, span {
-    color: white;
-}
 
 @media only screen and (max-width: 720px) {
     .discover h5, span {
@@ -218,6 +188,68 @@ figcaption {
     }
 }
 
-body {
+/* body {
     background-color: whitesmoke;
+} */
+
+.latest-review {
+    /* display: inline-block; */
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 1300px;
+
+}
+.latest-review img {
+    width: 350px;
+    height: 550px;
+
+}
+
+.latest-review p {
+    margin: 20px;
+    display:inline;
+    vertical-align: center;
+}
+
+/* .featured-words {
+    border: 2px solid black;
+}
+
+.recommended-books {
+    border: 2px solid black;
+} */
+
+.footerClass {
+    background-image: url('../images/black-strips.png');
+    margin: 20px 20px 0px 0px;
+    padding: 20px;    
+    width: 100%;
+
+}
+
+
+.footerClass h6 {
+    color: grey;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold; 
+    font-size: 2.5rem;
+}
+
+.footerClass #about p {
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#aboutContent ul li {
+    display: inline;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 1.3rem;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
 }

@@ -90,37 +90,38 @@ form {
     }
   }
 
-footer {
-    background-image: url('../images/footer-background.jpeg');
-    border: 5px solid black;
-    margin: 10px 10px 0px 0px;
+
+  .footerClass {
+    background-image: url('../images/black-strips.png');
+    margin: 20px 20px 0px 0px;
     padding: 20px;    
     width: 100%;
 
 }
 
-#about h6, p, li{
-    color: white;
-}
 
-#about h6 {
+.footerClass h6 {
+    color: grey;
     text-align: center;
     text-decoration: underline;
     font-weight: bold; 
-    font-size: 20px;
+    font-size: 2.5rem;
 }
 
-#about ul ul li a {
-    color: orange;
+.footerClass #about p {
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-#about ul ul li a:hover {
-    border: 5px solid lightblue;
-    background-color: darkblue;
-
-}
-
-#about p {
-    font-weight: bold;
-    text-decoration: underline;
+#aboutContent ul li {
+    display: inline;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 1.3rem;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
 }

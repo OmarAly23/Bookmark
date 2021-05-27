@@ -1,0 +1,110 @@
+html {
+    font-size: 16px;
+}
+h3 {
+    font-family: 'Abril Fatface', sans-serif;
+    margin-left: 25rem;
+    text-decoration: underline;
+}
+
+.bookmark-header {
+    border: 5px solid black;
+    width: 100%;
+    height: 70px;
+    font-family: 'Abril Fatface', sans-serif;
+    background-image: url('../images/black-strips.png');
+    /* background-color: #358597; */
+    color: white;
+    position: fixed;
+    top: 0px;
+    /* overflow: hidden; */
+}
+
+.bookmark-header h1 a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+.bookmark-header ul li, h1 {
+    display: inline-block;
+}
+
+.bookmark-header h1 {
+    float: left;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 720px) {
+    .bookmark-header ul li {
+        font-size: 0.5rem;
+        overflow: hidden;
+    }
+    .bookmark-header .search {
+        font-size: 0.5rem;
+        display: none;
+    }
+    .bookmark-header h1 a {
+        font-size: 1.5rem;
+    }
+}
+ 
+body {
+    font-family: menlo, sans-serif;
+}
+
+header a {
+    font-size: 16px;
+    color: white;
+}
+
+
+.nav-item input[type=text] {
+    float: right;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-right: 16px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', sans-serif;
+    height: 30px;
+    color: black;
+  }
+
+  .footerClass {
+    background-image: url('../images/black-strips.png');
+    margin: 20px 20px 0px 0px;
+    padding: 20px;    
+    width: 100%;
+
+}
+
+
+.footerClass h6 {
+    color: grey;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold; 
+    font-size: 2.5rem;
+}
+
+.footerClass #about p {
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#aboutContent ul li {
+    display: inline;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 1.3rem;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
+}
