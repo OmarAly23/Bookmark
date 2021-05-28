@@ -1,6 +1,9 @@
 html{
     font-size: 16px;
 }
+
+/* Header styling begins here */
+
 h3 {
     font-family: 'Abril Fatface', sans-serif;
     margin-left: 25rem;
@@ -98,7 +101,9 @@ header a {
     color: black;
   }
 
+  /* Header styling ends here */
 
+/* Styling of all the images inside the top reviews section */
 
 .container img {
     width: 200px;
@@ -159,6 +164,10 @@ figcaption {
     padding: 5px; 
 }
 
+/* Styling of the images inside the top reviews ends here */
+
+/* Styling of the discover section */
+
 .discover h5{
     font-family: 'Abril Fatface', sans-serif;
     font-size: 20px;
@@ -178,6 +187,8 @@ figcaption {
     font-size: 16px;
 }
 
+/* The discover section styling ends here */
+
 
 
 @media only screen and (max-width: 720px) {
@@ -189,9 +200,7 @@ figcaption {
     }
 }
 
-/* body {
-    background-color: whitesmoke;
-} */
+/* Styling the latest Reviews section */
 
 .latest-review {
     /* display: inline-block; */
@@ -212,6 +221,9 @@ figcaption {
     vertical-align: center;
 }
 
+/* Latest reviews styling ends here */
+
+/* This is the section for the recommended books */
 
 .recommended-books .grid-container figcaption {
     display:inline;
@@ -241,8 +253,11 @@ figcaption {
     
 }
 
+/* Styling of the recommendation section ends here */
 
 
+
+/* Styling the footer begins here */
 
 .footerClass {
     background-image: url('../images/black-strips.png');
@@ -282,3 +297,6 @@ figcaption {
     color: whitesmoke;
     width: 100%;
 }
+
+
+/* Footer styling ends here */
