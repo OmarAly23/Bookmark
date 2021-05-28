@@ -108,16 +108,6 @@ header a {
 }
 
 
-/* .middle-section .books .containers {
-    margin: 100px;
-}
-
-.middle-section {
-    border: 2px solid black;
-    width: 100%;
-
-}  */
-
 .image-boxes .container .image2, .image3, .image0, .image1 {
     display: inline-block;
     border: 2px solid black;
@@ -222,17 +212,41 @@ figcaption {
     vertical-align: center;
 }
 
-/* .featured-words {
+
+.recommended-books .grid-container figcaption {
+    display:inline;
+    vertical-align: center;
+
+}
+.recommended-books .grid-container .DC img{
+    display: inline-grid;
     border: 2px solid black;
+    width: 550px;
+    height: 650px;
+    margin: 0 auto;
+    justify-content: center;
+    border: 5px solid black;
+    padding: 50px;
+
 }
 
-.recommended-books {
+.recommended-books .grid-container .Marvel img{
+    display: inline-grid;
     border: 2px solid black;
-} */
+    width: 550px;
+    height: 650px;
+    justify-content: center;
+    border: 5px solid black;
+    padding: 50px;
+    
+}
+
+
+
 
 .footerClass {
     background-image: url('../images/black-strips.png');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: cover;
     margin: 20px 20px 0px 0px;
     padding: 20px;    
