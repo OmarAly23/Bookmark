@@ -10,52 +10,26 @@
         <link href="resources/login.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div class="bookmark-header">
-                <h1><a href="homePage.html">Bookmark</a></h1>
-            </div>
-        </header>
-        <main>
-            <div class="login-form">
-                <form action="" method="post">
-                    <div class="imgcontainer">
-                      <img src="./images/img_avatar.png" alt="Avatar" class="avatar">
+        <h1><img src="./images/icons8-hatena-bookmark-48-blue.png" width="55px" height="55px"><a href="homePage.html">  Bookmark</a></h1>
+        <div class="form_wrapper">
+            <div class="form_container">
+              <div class="title_container">
+                <h2>Login</h2>
+              </div>
+              <div class="row clearfix">
+                <div class="">
+                  <form>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                      <input type="email" name="email" placeholder="Email" required />
                     </div>
-                  
-                    <div class="container">
-                      <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
-                  
-                      <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                      <button type="submit">Login</button>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                      <input type="password" name="password" placeholder="Password" required />
                     </div>
-                  
-                    <div class="container" style="background-color:#f1f1f1">
-                      <span class="psw">Forgot <a href="#">password?</a></span>
-                    </div>
+                    <input class="button" type="submit" value="Login" />
                   </form>
-            </div>
-        </main>
-        <footer>
-            <div class="footerClass">
-                <h6>Bookmark<br><br></h6>
-                <div id="about">
-                    <div id="aboutContent">
-                        <p>
-                            <em>Check the story behind the website</em>
-                            <center>
-                                <ul>
-                                    <li>* Story</li>
-                                    <li>* References</li>
-                                    <li>* Documentation</li>
-                                </ul><br><br>
-                            </center>
-                        </p>
-                    </div>
                 </div>
+              </div>
             </div>
-        </footer>
+          </div>
     </body>
 </html>
