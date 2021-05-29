@@ -18,8 +18,10 @@ h3 {
 }
 
 .Animation img {
-    margin: 0 auto;
-    padding-left: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .bookmark-header {

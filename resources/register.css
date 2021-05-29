@@ -32,7 +32,9 @@ h1 img{
   padding-top: 0px; 
 }
 
-
+h2, label {
+  color: black;
+}
 
 .clearfix:after {
   content: "";
@@ -47,6 +49,7 @@ h1 img{
   max-width: 100%;
   box-sizing: border-box;
   padding: 25px;
+  border-radius: 50px;
   margin: 8% auto 0;
   position: relative;
   z-index: 1;
@@ -88,6 +91,7 @@ h1 img{
 .form_wrapper .row > div {
   padding: 0 15px;
   box-sizing: border-box;
+  
 }
 .form_wrapper .col_half {
   width: 50%;

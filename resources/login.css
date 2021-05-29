@@ -32,7 +32,6 @@ h1 img{
 }
 
 
-
 .clearfix:after {
   content: "";
   display: block;
@@ -48,6 +47,7 @@ h1 img{
   padding: 25px;
   margin: 8% auto 0;
   position: relative;
+  border-radius: 50px;
   z-index: 1;
   border-top: 5px solid #f5ba1a;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
