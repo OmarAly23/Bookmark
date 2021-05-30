@@ -35,6 +35,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="register.html">Register</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="buttn">Dark-Mode</button>
+                        <script>
+                            const btn = document.querySelector(".buttn");
+                            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                            const currentTheme = localStorage.getItem("theme");
+                            if (currentTheme == "dark") {
+                                document.body.classList.toggle("dark-theme");
+                            } else if (currentTheme == "light") {
+                                document.body.classList.toggle("light-theme");
+                            }
+
+                            btn.addEventListener("click", function () {
+                            if (prefersDarkScheme.matches) {
+                                document.body.classList.toggle("light-theme");
+                                var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+                            } else {
+                                document.body.classList.toggle("dark-theme");
+                                var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+                                }
+                                localStorage.setItem("theme", theme);
+                            });                            
+                        </script>
+                    </li>
                     <li class="nav-item search">
                         <input type="text" placeholder="Search for a book...">
                     </li>
@@ -147,7 +171,8 @@
 
             <br><br><br><br><br><br>
 
-            <h3><strong><em>Recommendations</em></strong></h3><br>
+            <div class="Rec-Section">
+                <h3><strong><em>Recommendations</em></strong></h3><br>
             
                 <div class="grid-container">
                     <div class="DC">
@@ -169,11 +194,8 @@
                                 Book by Stephen Wiacek</figcaption> -->
                         </figure>
                     </div>
-            </div><br><br><br><br><br>
-
-            <!-- <div class="bkimg">
-                <img src="images/cb.jpeg">
-            </div><br><br><br> -->
+                </div>
+            </div>
         </main>
         <footer>
             <div class="footerClass">
@@ -184,9 +206,9 @@
                             <em><img src="./images/icons8-hatena-bookmark-48-blue.png" width="55px" height="55px">Check the story behind the website</em>
                             <center>
                                 <ul>
-                                    <li>* Story</li>
-                                    <li>* References</li>
-                                    <li>* Documentation</li>
+                                    <li><a href="#" target="_blank"></a>* Story</li>
+                                    <li><a href="#" target="_blank"></a>* References</li>
+                                    <li><a href="https://github.com/OmarAly23/Bookmark.html" target="_blank">* Documentation</a></li>
                                 </ul><br><br>
                             </center>
                         </p>
