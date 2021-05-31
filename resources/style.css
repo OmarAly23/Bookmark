@@ -539,7 +539,7 @@ figcaption {
             /* Footer */
       
 
-           HTML CSSResult Skip Results Iframe
+           /* HTML CSSResult Skip Results Iframe
            EDIT ON
            *, *:before, *:after {
              box-sizing: border-box;
@@ -559,7 +559,7 @@ figcaption {
              align-items: start;
              min-height: 100vh;
            }
-           
+            */
            .footer {
              display: flex;
              flex-flow: row wrap;
