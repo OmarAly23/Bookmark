@@ -8,6 +8,7 @@ h3 {
     font-family: 'Abril Fatface', sans-serif;
     margin-left: 25rem;
     text-decoration: underline;
+    color: black;
 }
 
 body {
@@ -155,6 +156,7 @@ body {
  
 body {
     font-family: menlo, sans-serif;
+
 }
 
 header a {
@@ -180,68 +182,109 @@ header a {
 
 /* Styling of all the images inside the top reviews section */
 
-.container img {
-    width: 200px;
-    height: 250px;
-    padding: 0px;
-    margin: 20px;
+.book-panel-grid {
+    grid-column-gap: 48px;
+    grid-row-gap: 48px;
+    box-sizing: border-box;
+    display: grid;
+    min-height: 0;
+    min-width: 0;
+    width: auto;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: repeat(8, 250px);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-area:auto;
+}
+
+@media (min-width: 768px) {
+    .book-panel {
+        grid-column-gap: 24px;
+        grid-template-columns: 154px auto;
+    }
+
+}
+
+.book-panel {
+    display: grid;
+    position: relative;
+    width: auto;
+    grid-column-gap: 45px;
+    /* align-items: center; */
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.book-panel-grid .book-panel:after {
+    border-bottom: 2px solid rgba(42,42,42,.05);
+    content: " ";
+    width: 100%;
+    height: 2px;
+    bottom: -24px;
+    position: absolute;
+}
+
+.book-panel .cover {
+    grid-row: span 3;
+    display: block;
+}
+.book-panel .cover a {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    
 }
 
 
-.image-boxes .container .image2, .image3, .image0, .image1 {
+@media (min-width: 768px) {
+    .book-panel .cover .book-cover {
+        height: 246px;
+        width: 154px
+    }    
+}
+
+.book-panel .cover .book-cover {
+    height: 157px;
+    width: 154px    
+}
+
+.book-panel .cover .book-cover .book-image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    content: " ";
     display: inline-block;
-    border: 2px solid black;
-    border-radius: 50px;
-    padding: 0px;
-    width: 500px;
-    margin: 40px;
-}
-.image-boxes .container .image5 {
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 50px;
-    padding: 0px;
-    width: 500px;
-    margin: 40px;
+    height: 100%;
+    width: 100%;
 }
 
-@media only screen and (max-width: 1400px) {
-    .image-boxes .container .image2, .image-boxes .container .image3, .image-boxes .container .image0, .image-boxes .container .image1,.image-boxes .container .image5 {
-        display: inline-block;
-        overflow: scroll;
-        width: 25rem;
-    }
+.book-panel .info {
+    align-self: start;
+    display: block;
 }
 
-@media only screen and (max-width: 720px) {
-    .image-boxes .container .image2, .image-boxes .container .image3, .image-boxes .container .image0, .image-boxes .container .image1,.image-boxes .container .image5 {
-        display: block;
-        width: 200px;
-        margin: 0 auto;
-        height: 300px;
-        overflow: scroll;
-        margin-bottom: 20px;
-
-    }
-    .image-boxes .container ul li {
-        display: inline-block;
-    }
-    img {
-        width: 100px;
-        height: 150px;
-    }
-    figcaption {
-        font-size: 0.5rem;
-       
-    }
-}
-
-figcaption {
+.book-panel .info h5, p {
     color: black;
-    display: inline;
-    /* vertical-align: top; */
-    font-size: 13px;
-    padding: 5px; 
+}
+
+.book-panel .info p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 8px;
+    color: black;
+}
+
+@media (max-width: 1023px) {
+.book-panel .description {
+    margin-top: 8px;
+    grid-column: span 2;
+}
 }
 
 /* Styling of the images inside the top reviews ends here */
@@ -283,6 +326,12 @@ figcaption {
         margin-left: 10%;
     }
 }
+
+
+    /* Features */
+
+    
+
 
 /* Styling the latest Reviews section */
 
