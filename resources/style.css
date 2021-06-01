@@ -99,6 +99,7 @@ body {
     color: white;
     position: fixed;
     top: 0px;
+    z-index: 1;
     /* overflow: hidden; */
 }
 
@@ -228,6 +229,8 @@ header a {
 .book-panel .cover {
     grid-row: span 3;
     display: block;
+    overflow: hidden;
+    
 }
 .book-panel .cover a {
     display: flex;
@@ -247,7 +250,7 @@ header a {
 
 .book-panel .cover .book-cover {
     height: 157px;
-    width: 154px    
+    width: 154px;
 }
 
 .book-panel .cover .book-cover .book-image {
@@ -259,6 +262,7 @@ header a {
     display: inline-block;
     height: 100%;
     width: 100%;
+    z-index: 0;
 }
 
 .book-panel .info {
