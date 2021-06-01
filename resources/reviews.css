@@ -1,10 +1,92 @@
-html {
+html{
     font-size: 16px;
 }
+
+/* Header styling begins here */
+
 h3 {
     font-family: 'Abril Fatface', sans-serif;
-    margin-left: 25rem;
-    text-decoration: underline;
+    margin-left: 21rem;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    
+    body {
+        
+      --text-color: #eee;
+      --bkg-color: #121212;
+      
+    }
+    body.light-theme {
+      --text-color: #222;
+      --bkg-color: #fff;
+    }
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: var(--bkg-color);
+  }
+  
+
+  /* .buttn button {
+      margin-top: 20px;
+      padding: 40px;
+      color: white;
+      
+  } */
+
+
+/* Dark Mode Code */
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #121212;
+    }
+  
+  } */
+
+
+  .buttn {
+    margin-top: 5px;
+    background: url('../images/galaxy.jpeg');
+    color: white;
+    /* text-shadow: 3px 3px 0 #18e657, 
+    6px 6px 0 #bf189b, 
+    9px 9px #ffeb00, 
+    12px 12px black; */
+  }
+  .buttn:hover {
+      color:#f5ba1a;
+  }
+.bkimg img {
+    display:block;
+    width:100%; height:100%;
+    object-fit: cover;
+
+}
+
+.Animation img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .bookmark-header {
@@ -12,21 +94,45 @@ h3 {
     width: 100%;
     height: 70px;
     font-family: 'Abril Fatface', sans-serif;
-    background-image: url('../images/black-strips.png');
+    background-image: url('../images/galaxy.jpeg');
+    background-repeat: no-repeat; 
+    background-size: cover;
     /* background-color: #358597; */
     color: white;
     position: fixed;
     top: 0px;
+    z-index: 1;
     /* overflow: hidden; */
 }
 
 .bookmark-header h1 a{
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
+    text-shadow: 3px 3px 0 #18e657, 
+                 6px 6px 0 #bf189b, 
+                 9px 9px #ffeb00, 
+                 12px 12px black;
+
+}
+
+.bookmark-header li a:hover {
+    color: #f5ba1a;
+}
+
+.bookmark-header h1 {
+    padding-top: 7px; 
+    padding-left: 75px;
+}
+
+.bookmark-header h1 img{
+    padding-top: 0px; 
 }
 
 
+.bookmark-header ul li {
+    margin-top: 16px;
+}
 
 .bookmark-header ul li, h1 {
     display: inline-block;
@@ -53,14 +159,13 @@ h3 {
  
 body {
     font-family: menlo, sans-serif;
-    min-height: 100vh;
+
 }
 
 header a {
     font-size: 16px;
     color: white;
 }
-
 
 .nav-item input[type=text] {
     float: right;
@@ -99,12 +204,17 @@ header a {
   }
   
   .footer__logo {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Abril Fatface', sans-serif;
     font-weight: 400;
     text-transform: lowercase;
     font-size: 1.5rem;
     color: white;
+    text-shadow: 3px 3px 0 #18e657, 
+                 6px 6px 0 #bf189b, 
+                 9px 9px #ffeb00, 
+                 12px 12px black;
   }
+
 
   
   .footer__addr h2 {
@@ -112,6 +222,7 @@ header a {
     font-size: 15px;
     font-weight: 400;
     color:white;
+    
   }
   
   .nav__title {

@@ -13,8 +13,32 @@
     <body>
         <header>
             <div class="bookmark-header">
-                <h1><a href="homePage.html">Bookmark</a></h1><br>
+                <h1><img src="./images/icons8-hatena-bookmark-48-blue.png" width="55px" height="55px"><a href="homePage.html">  Bookmark</a></h1>
                 <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <input type="button" class="buttn" placeholder="Dark" value="Dark-Mode">
+                        <script>
+                            const btn = document.querySelector(".buttn");
+                            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                            const currentTheme = localStorage.getItem("theme");
+                            if (currentTheme == "dark") {
+                                document.body.classList.toggle("dark-theme");
+                            } else if (currentTheme == "light") {
+                                document.body.classList.toggle("light-theme");
+                            }
+
+                            btn.addEventListener("click", function () {
+                            if (prefersDarkScheme.matches) {
+                                document.body.classList.toggle("light-theme");
+                                var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+                            } else {
+                                document.body.classList.toggle("dark-theme");
+                                var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+                                }
+                                localStorage.setItem("theme", theme);
+                            });                            
+                        </script>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#about">About</a>
                     </li>
@@ -38,7 +62,13 @@
                     </li>
                   </ul>
                 </div>
-        </header><br><br><br><br><br><br><br><br><br><br>
+        </header>
+        <main><br><br><br><br><br>
+            
+            <div class="bkimg">
+                <img src="images/bg.png">
+            </div><br><br><br>
+
 
         <footer class="footer" id="about">
             <div class="footer__addr">
