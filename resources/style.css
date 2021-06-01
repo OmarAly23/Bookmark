@@ -674,15 +674,17 @@ header a {
            
            .footer__addr h2 {
              margin-top: 1.3em;
-             font-size: 15px;
+             font-size: 18px;
              font-weight: 400;
              color:white;
+             font-family: 'Abril Fatface', sans-serif;
            }
            
            .nav__title {
              font-weight: 400;
-             font-size: 15px;
+             font-size: 18px;
              color: white;
+             font-family: 'Abril Fatface', sans-serif;;
            }
            
            .footer address {
@@ -716,6 +718,9 @@ header a {
            
            .footer a {
              text-decoration: none;
+           }
+           .footer a:hover {
+               color: #F5B02E;
            }
            
            .footer__nav {
