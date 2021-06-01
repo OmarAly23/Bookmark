@@ -326,7 +326,7 @@ header a {
 
 } */
 
-.discover h5{
+/* .discover h5{
     font-family: 'Abril Fatface', sans-serif;
     font-size: 20px;
     border: 2px solid black;
@@ -337,26 +337,26 @@ header a {
     padding: 50px;
     color: white;
     background-image: url('../images/galaxy.jpeg');
-    /* background-color: #358597; */
+    
 
 }
 
 .discover span{
     font-size: 16px;
-}
+} */
 
 /* The discover section styling ends here */
 
 
 
-@media only screen and (max-width: 720px) {
+/* @media only screen and (max-width: 720px) {
     .discover h5, span {
         font-size: 0.75rem;
         height: auto;
         width: 80%;
         margin-left: 10%;
     }
-}
+} */
 
 
     /* Features */
@@ -366,8 +366,8 @@ header a {
 
 /* Styling the latest Reviews section */
 
-.latest-review {
-    /* display: inline-block; */
+/* .latest-review {
+    
     border: 2px solid black;
     border-radius: 20px;
     margin: 0 auto;
@@ -384,7 +384,7 @@ header a {
     margin: 20px;
     display:inline;
     vertical-align: center;
-}
+} */
 
 /* Latest reviews styling ends here */
 
