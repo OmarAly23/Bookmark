@@ -6,7 +6,7 @@ html{
 
 h3 {
     font-family: 'Abril Fatface', sans-serif;
-    margin-left: 25rem;
+    margin-left: 21rem;
     text-decoration: underline;
     color: black;
 }
@@ -249,7 +249,7 @@ header a {
 }
 
 .book-panel .cover .book-cover {
-    height: 157px;
+    height: 250px;
     width: 154px;
 }
 
