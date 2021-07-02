@@ -45,13 +45,19 @@
                       <a class="nav-link active" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="features.html">Features</a> 
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="recommendations.html">Recommendations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        <div class="dropdown">
+                            <p class="nav-link">Book Reviews</p>
+                            <div class="dropdown-content">
+                                <span><a class="nav-link" style="color: black;" href="reviews.html">All Reviews</a></span>
+                                <span><a class="nav-link" style="color: black;" href="fiction.html">Fiction</a></span>
+                                <span><a class="nav-link" style="color: black;" href="nonFiction.html">Non-Fiction</a></span>
+                                <span><a class="nav-link" style="color: black;" href="mystery.html">Mystery</a></span>
+                                <span><a class="nav-link" style="color: black;" href="horror.html">Horror</a></span>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login</a>
@@ -60,7 +66,7 @@
                         <a class="nav-link" href="register.html">Register</a>
                     </li>
                     <li class="nav-item search">
-                        <input type="text" placeholder="Search for a book...">
+                        <input type="text" id="search" placeholder="Search for a book...">
                     </li>
                   </ul>
                 </div>
