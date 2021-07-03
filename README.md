@@ -4,7 +4,7 @@
 
 ## *A description of the project:*
 
-  - A book review website where users would be able to register with a unique username, and then log in using the username and password they have registered with. A user can browse book reviews without creating an account but would lose some utilities. Once a user logs in, they will be redirected to their profile page where they can modify their profile appearance, add books to custom lists, create a review for any specific book, as well as viewing reviews other users have left on said book. We will use a third-party API (Application Programming Interface) by Goodreads, a cataloging website with a large database of books and reviews, to pull in ratings from an extensive audience. Finally, users will be able to query for book details and book reviews left by our users programmatically via our website’s API. 
+  - A book review website where users would be able to register with a unique username, and then log in using the username and password they have registered with. A user can browse book reviews without creating an account but would lose some utilities. A member will have the privilege of adding reviews unlike a normal user. We will use a third-party API (Application Programming Interface) by Goodreads, a cataloging website with a large database of books and reviews, to pull in ratings from an extensive audience. Finally, users will be able to query for book details and book reviews left by our users programmatically via our website’s API. 
 
  
 
@@ -35,12 +35,8 @@
 
   - Search. 
 
-   - Book Page. 
-
-  - Profile page. 
+  - Book Page. 
 
   - Review creation. 
-
-  - List creation. 
 
  
