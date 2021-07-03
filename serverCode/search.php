@@ -71,7 +71,7 @@
                 <a class="nav-link" href="../register.html">Register</a>
             </li>
             <li class="nav-item search">
-                <form method="post" action="bookmark/serverCode/search.php">
+                <form method="post" action="./search.php">
                     <input type="text" name="search" id="search" placeholder="Search for a book...">
                     <input type="submit" name="submit" value="Search">
                 </form>
@@ -80,25 +80,25 @@
           </ul>
         </div>
 </header>
+
+<table id="displayData" border='2px solid black'>
+<thead>
+    <th id="displayData"><strong>ID</strong></th>
+    <th id="displayData"><strong>Name</strong></th>
+    <th id="displayData"><strong>Author</strong></th>
+    <th id="displayData"><strong>Category</strong></th>
+</thead>
 HERE;
 
-
+    
     while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $ID = $row["ID"];
         $Name = $row["Name"];
         $Author = $row["Author"];
         $Category = $row["Category"];
-    }
 
-    print <<< HERE
+    print <<<HERE
 
-                <table id="displayData" border='2px solid black'>
-                    <thead>
-                        <th id="displayData" ><strong>ID</strong></th>
-                        <th id="displayData" ><strong>Name</strong></th>
-                        <th id="displayData" ><strong>Author</strong></th>
-                        <th id="displayData" ><strong>Category</strong></th>
-                    </thead>
                     <tbody>
                         <tr id="displayData">
                             <td id="displayData">$ID</td>
@@ -107,8 +107,10 @@ HERE;
                             <td id="displayData">$Category</td>
                         </tr>
                     </tbody>
+                </table>
 
 HERE;
+    } // end of the while loop
         
 
 
