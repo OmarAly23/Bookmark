@@ -48,12 +48,12 @@
                         <div class="dropdown">
                             <p class="nav-link">Book Reviews</p>
                             <div class="dropdown-content">
-                                <span><a class="nav-link" style="color: black;" href="reviews.html">All Reviews</a></span>
-                                <span><a class="nav-link" style="color: black;" href="fiction.html">Fiction</a></span>
-                                <span><a class="nav-link" style="color: black;" href="nonFiction.html">Non-Fiction</a></span>
-                                <span><a class="nav-link" style="color: black;" href="mystery.html">Mystery</a></span>
-                                <span><a class="nav-link" style="color: black;" href="horror.html">Horror</a></span>
-                                <span><a class="nav-link" style="color: black;" href="Comic_Books.html">Comic books</a></span>
+                                <span><a class="nav-link" style="color: black;" href="reviews.php">All Reviews</a></span>
+                                <span><a class="nav-link" style="color: black;" href="fiction.php">Fiction</a></span>
+                                <span><a class="nav-link" style="color: black;" href="nonFiction.php">Non-Fiction</a></span>
+                                <span><a class="nav-link" style="color: black;" href="mystery.php">Mystery</a></span>
+                                <span><a class="nav-link" style="color: black;" href="horror.php">Horror</a></span>
+                                <span><a class="nav-link" style="color: black;" href="Comic_Books.php">Comic books</a></span>
                             </div>
                         </div>
                     </li>
@@ -64,7 +64,11 @@
                         <a class="nav-link" href="register.html">Register</a>
                     </li>
                     <li class="nav-item search">
-                        <input type="text" id="search" placeholder="Search for a book...">
+                        <form method="post" action="search.php">
+                            <input type="text" name="search" id="search" placeholder="Search for a book...">
+                            <input type="submit" name="submit" value="Search">
+                        </form>
+                        
                     </li>
                   </ul>
                 </div>
@@ -75,26 +79,6 @@
                 <img src="images/bg.png">
             </div><br><br><br>
 
-            <!-- <div class="discover">
-                <h5>
-                    <em>Discover your next great book to read and help others review</em><br>
-                    <span>
-                        <br>Our aim is to induce the sense of readership in users as they browse for books and their reviews, as book reviews are a contributing factor to whether you are going to read the book or not.
-                    </span>
-                </h5>
-            </div><br><br><br><br><br><br> -->
-<!-- 
-            <h3><strong><em>Features </em></strong></h3><br>
-
-            <div class="featured-words">
-                
-            </div>
-
-            <h3><strong><em>Our Latest Reviews: </em></strong></h3><br>
-            <!-- <div class="latest-review">
-                <img src="./bookImages/the_hitchhiker_guide_to_the_galaxy .png">
-                <p>Grab a towel and accompany human Arthur Dent on a fantastic adventure across the galaxy.<br>Learn not to take the universe so seriously and forget any meaning you’ve applied to anything in your life, because we all know the real meaning of life is 42.</p>
-            </div><br><br><br> --> -->
             <div class="Animation">
                 <img src="https://img.nui.media/banners/media/50/509346/66/661429/1621436870277_semiautobio70kb.gif">
             </div><br><br> 
