@@ -19,7 +19,7 @@
     </body>
 </html>
 <?php
-
+    session_start();
     require "db_info.php";  //Connect to get info
     $search = $_POST['search'];
 
@@ -54,26 +54,12 @@ HERE;
 
     
     while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-        $ID = $row["ID"];
-        $Name = $row["Name"];
-        $Author = $row["Author"];
-        $Category = $row["Category"];
-
-    print <<<HERE
-
-                    <tbody>
-                        <tr id="displayData">
-                            <td id="displayData">$ID</td>
-                            <td id="displayData">$Name</td>
-                            <td id="displayData">$Author</td>
-                            <td id="displayData">$Category</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-HERE;
+        $_SESSION["ID"] = $row["ID"];
+        $_SESSION["Name"] = $row["Name"];
+        $_SESSION["Author"] = $row["Author"];
+        $_SESSION["Category"] = $row["Category"];
+        include "tmp.php";
     } // end of the while loop
-        
-
+    print("</tbody></table>");
 
 ?>
