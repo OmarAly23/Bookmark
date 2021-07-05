@@ -8,9 +8,10 @@
                 height: 300px;
                 margin: 0 auto;
             }
-            #displayData td, th, tr{
+            table td, th, tr{
                 color: black;
                 padding: 20px;
+                border: 5px solid black; 
             }
         </style>
     </head>
@@ -35,11 +36,14 @@
     }
 
     $number = mysqli_num_rows($result);
+    if ($number < 0) {
+        echo "Error - No Data To Display";
+    }
     $pageTitle = "Search Results";
     include "header.php";
     print <<< HERE
 
-<table id="displayData" border='2px solid black'>
+<table id="displayData">
 <thead>
     <th id="displayData"><strong>ID</strong></th>
     <th id="displayData"><strong>Name</strong></th>
