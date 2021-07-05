@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            table {
+                border: 5px solid black; 
+                width: 450px;
+                height: 300px;
+                margin: 0 auto;
+            }
+            #displayData td, th, tr{
+                color: black;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+</html>
 <?php
 
     require "db_info.php";  //Connect to get info
@@ -20,7 +39,7 @@
     include "header.php";
     print <<< HERE
 
-<table id="displayData">
+<table id="displayData" border='2px solid black'>
 <thead>
     <th id="displayData"><strong>ID</strong></th>
     <th id="displayData"><strong>Name</strong></th>
