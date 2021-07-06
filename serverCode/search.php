@@ -13,6 +13,9 @@
                 padding: 20px;
                 border: 5px solid black; 
             }
+            p {
+                color: black;
+            }
         </style>
     </head>
     <body>
@@ -37,7 +40,8 @@
 
     $number = mysqli_num_rows($result);
     if ($number < 0) {
-        echo "Error - No Data To Display";
+        print("<p><strong><center>No Data to display</center></strong></p>");
+        die("</body></html>");
     }
     $pageTitle = "Search Results";
     include "header.php";
@@ -61,5 +65,4 @@ HERE;
         include "tmp.php";
     } // end of the while loop
     print("</tbody></table>");
-
 ?>
