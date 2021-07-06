@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     require "db_info.php";
 
 	$email = cleanData($_POST['email']);
@@ -19,16 +19,19 @@
 
     $sql = "SELECT * FROM Users WHERE email = '$email'";
 
-    if (($result = mysqli_query($db, $sql))) {
+    if (!($result = mysqli_query($db, $sql))) {
         $_SESSION["Already_Exists"] = "This account already exists!!!!!!!!!!!";
         $_SESSION["tmpMail"] = $email;
         $_SESSION["tmpUsername"] = $username;  
-        header("Location: ../register.html");
+        // header("Location: register.php");
     } else {
         $insert = "INSERT INTO Users (Username, Email, Password) VALUES ('$username', '$email', '$password')";
         if (!($result = mysqli_query($db, $insert))) {
             print("<p>Could not execute query!</p>");
             die(mysqli_error($db) . "</body><html>");
         }
+        print("<p style='color:black;'>Successfully added</p>");
+        $url = "loginForm.php";
+        header("Location: $url");
     }
 ?>

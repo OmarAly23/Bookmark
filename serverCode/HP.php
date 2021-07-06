@@ -52,10 +52,12 @@
 
 <?php
    require "db_info.php";
+   require "../login.php";
    $review = $_POST['review'];
+   isset($_SESSION['username']);
+   $tmp = $_SESSION['username'];
 
-
-   $sql = "INSERT INTO `Reviews` (bookName, Reviewer, Review) VALUES ('Harry Potter and the Philosopher’s Stone', 'Osaimi', '$review')";
+   $sql = "INSERT INTO `Reviews` (bookName, Reviewer, Review) VALUES ('Harry Potter and the Philosopher’s Stone', '$tmp', '$review')";
 
    if (!($result = mysqli_query($db, $sql))) {
        print("<p>Could not execute query!</p>");
@@ -63,5 +65,5 @@
    } else {
     print("<h1>Successfully added the review</h1>");
    }
-   
+
 ?> 
