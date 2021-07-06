@@ -24,7 +24,7 @@
     } else if ($_GET['ID']=='4') {
       include "lotr.php";
     } else if ($_GET['ID']=='5') {
-      include "bookThief.php";
+      include "bookTheif.php";
     } else if ($_GET['ID']=='6') {
       include "1984.php";
     } else if ($_GET['ID']=='7') {
